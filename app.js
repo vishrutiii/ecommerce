@@ -81,6 +81,8 @@ app.get("/", (req, res) => {
   res.redirect("/login");
 });
 
-app.listen(8080, () => {
-  console.log("server running at port 8080");
+var port_number = (process.env.PORT || 3000);
+
+app.listen(port_number, () => {
+  console.log("server running at port 3000");
 });
