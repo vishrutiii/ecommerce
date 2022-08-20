@@ -1,0 +1,46 @@
+<%- include("../partials/header") %>
+
+<h1 style="text-align: center" class="heading">E-Commerce</h1>
+
+<div class="container">
+  <%- include("../partials/flash") %>
+
+  <form class="validated-form" action="/login" method="POST" novalidate>
+    <div class="mb-3 login-div" style="font-weight: 600; color: #3fa796">
+      <label for="username" class="form-label">Username: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        placeholder="Enter Username "
+        name="username"
+        required
+      />
+      <!-- <dv id="emailHelp" class="form-text">We'll never share your email imagev> -->
+    </div>
+    <div class="mb-3" style="font-weight: 600; color: #3fa796">
+      <label for="password" class="form-label">Password: </label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Enter Password "
+        name="password"
+        required
+      />
+      
+    <br />
+
+    <button type="submit" class="btn btn-login">Login</button>
+
+    <p class="new-user">New User? <a href="/register">Sign-up</a></p>
+  </form>
+</div>
+
+<footer class="footer py-3 mt-0 text-center" style="width: 100%">
+  <div class="container">
+    <span>&copy; created by Kartik Kapil</span>
+  </div>
+</footer>
+
+<%- include("../partials/footer") %>
