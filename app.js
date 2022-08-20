@@ -47,7 +47,7 @@ app.use(methodOverride("_method"));
 
 //.env file bnate hai usemdaalte hai
 const sessionConfig = {
-  secret: "my name is vohra",
+  secret: "Kartik Kapil",
   resave: false,
   saveUninitialized: true,
 };
