@@ -1,7 +1,5 @@
-// making model of the product
 const mongoose = require("mongoose");
 
-//making basic schema and then making model
 const productSchema = new mongoose.Schema({
   name: {
     type: String,

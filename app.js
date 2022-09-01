@@ -8,16 +8,13 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
-
-//product routes
 const productRoutes = require("./routes/product");
 const authRoutes = require("./routes/auth");
 
-//conecting dbs
 mongoose
   .connect(
-    "mongodb+srv://Kartik:kapil123@cluster0.qqv9hwt.mongodb.net/shopApp", 
-    {
+    "mongodb+srv://Vishrutiii:vishruti1102@cluster0.kky45.mongodb.net/?retryWrites=true&w=majority",
+    {      
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -37,9 +34,7 @@ mongoose
 //configuring the view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
-//views is for ejs files and public is for static files
 
-//configuring static files
 app.use(express.static(path.join(__dirname, "/public")));
 //req ki body ko parse krna hai therefore we will use
 app.use(express.urlencoded({ extended: true }));
@@ -47,7 +42,7 @@ app.use(methodOverride("_method"));
 
 //.env file bnate hai usemdaalte hai
 const sessionConfig = {
-  secret: "Kartik Kapil",
+  secret: "vishruti",
   resave: false,
   saveUninitialized: true,
 };

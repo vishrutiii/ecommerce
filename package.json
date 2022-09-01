@@ -4,9 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js"
+    "start": "nodemon ./app.js",
+    "heroku-postbuild": "npm run build"
   },
-  "author": "kartik kapil",
+  "author": "vishruti",
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",

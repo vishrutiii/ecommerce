@@ -1,5 +1,4 @@
 <%- include('../partials/header') %> <%- include('../partials/navbar') %>
-<!-- <h1 style="text-align: center">Edit page for the product</h1> -->
 
 <div class="container">
   <form
@@ -19,12 +18,7 @@
         value="<%=product.name%>"
         required
       />
-      <!-- <dv id="emailHelp" class="form-text">We'll never share your email imagev> -->
     </div>
-    <!-- <div class="mb-3">
-          <label for="image" class="form-label" >Image URL: </label>
-          <input type="text" class="form-control" id="image" placeholder="Enter the image URL: " name="product[image]"value="<%=product.image%>" required>
-        </div> -->
     <div class="mb-3">
       <label for="price" class="form-label">Price in Rs: </label>
       <input
@@ -51,8 +45,6 @@
 <%= product.desc %> </textarea
       >
     </div>
-    <!-- //here we have made an objet of product i.e name idk why  -->
-    <!-- <textarea name="desc" id="desc" cols="50" rows="5" placeholder="Enter the description: " style="cursor: pointer; margin: 10px auto;"></textarea> -->
     <br /><br />
 
     <button type="submit" class="btn btn-success add-btn">Add</button>
